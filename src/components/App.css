@@ -1,0 +1,112 @@
+button, input {
+  padding: 2px 5px;
+  margin: 5px;
+}
+
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 10px 2px;
+}
+
+thead tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff2b;
+}
+
+.App {
+  position: relative;
+  margin: 15px;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.addTask label {
+  display: block;
+  margin: 15px 10px;
+}
+
+.addTask .importantText, .addTask .dateText {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.taskContener {
+  margin: 10px 0;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.taskListActive {
+  padding: 0 10px;
+  border-top: 1px solid #fff;
+}
+
+.taskListActive .important {
+  color: #4e14d4;
+  font-weight: 900;
+}
+
+.taskListActive .importantText {
+  font-size: 1.1em;
+}
+
+.taskListActive .importantDate {
+  font-style: italic;
+}
+
+.taskListDone .important {
+  font-weight: 900;
+}
+
+@-webkit-keyframes showEditTask {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showEditTask {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.editTaskContener {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #44bec2f3;
+  opacity: 0;
+  -webkit-animation: showEditTask .5s forwards;
+          animation: showEditTask .5s forwards;
+}
+
+.editTaskContener input[name="editedTask"] {
+  display: block;
+  margin: 10px auto;
+}
+
+.editTaskContener .btnEdit {
+  margin: 15px;
+}
+/*# sourceMappingURL=App.css.map */

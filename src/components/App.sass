@@ -1,0 +1,72 @@
+// Global
+
+button, input
+    padding: 2px 5px
+    margin: 5px
+table
+    margin: 10px auto
+    border-collapse: collapse
+td
+    padding: 5px 10px 2px
+thead tr
+    border-bottom: 1px solid #ffffff
+tbody tr:nth-child(even)
+    background-color: #ffffff2b
+
+// end global
+
+.App
+    position: relative
+    margin: 15px
+    padding: 10px 0
+    border: 1px solid #fff
+    border-radius: 20px
+.addTask    
+    label
+        display: block
+        margin: 15px 10px
+    .importantText, .dateText
+        display: inline-block
+        margin: 0 5px
+.taskContener
+    margin: 10px 0
+    padding: 8px 10px
+    text-align: center
+.taskListActive
+    padding: 0 10px
+    border-top: 1px solid #fff
+    .important
+        color: #4e14d4
+        font-weight: 900
+    .importantText
+        font-size: 1.1em
+    .importantDate
+        font-style: italic
+.taskListDone
+    .important
+        font-weight: 900
+
+@keyframes showEditTask
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.editTaskContener
+    position: absolute
+    top: 50%
+    left: 50%
+    height: 90%
+    width: 90%
+    transform: translate(-50%, -50%)
+    border-radius: 20px
+    padding: 10px
+    text-align: center
+    background-color: #44bec2f3
+    opacity: 0
+    animation: showEditTask .5s forwards
+    input[name="editedTask"]
+        display: block
+        margin: 10px auto
+    .btnEdit
+        margin: 15px
